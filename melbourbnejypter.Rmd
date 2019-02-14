@@ -1,0 +1,13 @@
+
+melbourne.data <- read.csv("D:melbourne.csv", header = TRUE,
+                    stringsAsFactors = FALSE, strip.white = TRUE, sep = ",",
+                    na.strings = c("","NA"))
+library("dplyr")
+library("utils")
+library("Amelia")
+library("VIM")
+library("openxlsx")
+library("psych")
+library("dummies")
+str(melbourne.data)
+summary(melbourne.data)
